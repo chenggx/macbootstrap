@@ -1,0 +1,39 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+127.0.0.1       nov.test
+127.0.0.1       cms.test
+127.0.0.1       weibo.test
+127.0.0.1       larabbs.test
+127.0.0.1       laravel-admin.test
+
+
+
+
+
+#255.255.255.255	broadcasthost
+::1                 localhost
+#0.0.0.0	        account.jetbrains.com
+#0.0.0.0	        www.jetbrains.com
+
+##vagrant-dev
+#192.168.10.10   sample.abc
+#192.168.10.10   larabbs.test
+#192.168.10.10   tkdd.test
+
+##vagrant-homstead
+#192.168.101.101 tp5.com
+#192.168.101.101 nov.com
+#192.168.101.101 tkdd.test
+
+##vagrant-ubuntu-16
+#192.168.3.11 bk.com
+
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section

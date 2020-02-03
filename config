@@ -1,0 +1,59 @@
+#shenyou.com
+Host shenyou
+    HostName 115.28.94.83
+    User root
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+#小米路由器
+Host xiaomi
+    HostName 192.168.31.1 
+    User root
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+#我的腾讯云主机
+Host myserver
+    HostName 118.24.53.222
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+#novker服务器
+Host novker
+    HostName 47.94.210.28
+    User root
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+#项目-腾讯服务器
+Host tengxun
+    HostName 118.25.18.24
+    User root
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+#采集服务器
+Host caiji
+    HostName 61.130.181.233
+    User root
+    Port 20406
+    IdentityFile ~/.ssh/id_rsa
+
+
+#www.qiaodongtou.com
+Host qiaodongtou 
+    HostName 39.106.205.33 
+    User root
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+Host *
+    ForwardAgent yes     
+    ServerAliveInterval 10
+    ServerAliveCountMax 10000
+    TCPKeepAlive no
+    ControlMaster auto
+    ControlPath ~/.ssh/%h-%p-%r
+    ControlPersist 4h
+    Compression yes
